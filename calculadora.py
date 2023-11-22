@@ -7,27 +7,22 @@
 
 def calculadora(num1, num2, operacao):
   if(operacao == 1):
-    return num1 + num2
-    print(resultado)
+    return num1 + num2   
   elif(operacao == 2):
-    return num1 - num2
-    print(resultado)
+    return num1 - num2    
   elif(operacao == 3):
-    return num1 * num2
-    print(resultado)
+    return num1 * num2   
   elif(operacao == 4):
     if(num2 != 0):
       return num1 / num2      
     else:
-      print("Não é possível dividir por zero.")
-      return 0
-  else:
-      print("Operação inválida. Escolha 1: Soma, 2: Subtração, 3: Multiplicação, 4: Divisão.")
+      print("Não é possível dividir por zero.")     
+  else:      
       return 0
 
-num1 = float(input("Digitar um número: "))
-num2 = float(input("Digitar outro número: "))     
-operacao = int(input("Escolher a operação (1: Soma, 2: Subtração, 3: Multiplicação, 4: Divisão): "))
+operacao = int(input("Escolher a operação\n 1: Soma\n 2: Subtração\n 3: Multiplicação\n 4: Divisão\n"))
+num1 = int(input("Digitar um número: "))
+num2 = int(input("Digitar outro número: "))     
 
 resultado = calculadora(num1, num2, operacao)
-print("O resultado da operação é: ", resultado)   
+print(f"O resultado da operação é: { resultado}")   
